@@ -1,14 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Content from './content';
+import useDynamicContent from '../../src/useDynamicContent';
 
 function App() {
+  useDynamicContent('app');
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Content />
         <a
           className="App-link"
           href="https://reactjs.org"
